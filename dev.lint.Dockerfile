@@ -1,8 +1,8 @@
 FROM golangci/golangci-lint:v1.33
 
 # Meta data
-LABEL maintainer="project_author_email"
-LABEL description="project_description"
+LABEL maintainer="email@mattglei.ch"
+LABEL description="🥧 Display a clock on the RPi sense hat"
 
 # Copying over files
 COPY . /usr/src/app
