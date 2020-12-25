@@ -5,9 +5,7 @@
 🥧 Display a clock on the RPi sense hat
 
 ![build](https://github.com/Matt-Gleich/clockhat/workflows/build/badge.svg)
-![test](https://github.com/Matt-Gleich/clockhat/workflows/test/badge.svg)
 ![lint](https://github.com/Matt-Gleich/clockhat/workflows/lint/badge.svg)
-![release](https://github.com/Matt-Gleich/clockhat/workflows/release/badge.svg)
 
 ## 🙌 Contributing
 
