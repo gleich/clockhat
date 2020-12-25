@@ -31,8 +31,8 @@ func main() {
 				continue
 			}
 
-			rgbVal := int(4.25 * float(now.Second()))
-			fb.SetPixel(rgbVal, rgbVal, rgbVal)
+			rgbVal := uint8(4.25 * float32(now.Second()))
+			fb.SetPixel(x, y, color.New(rgbVal, rgbVal, rgbVal))
 
 			x++
 		}
