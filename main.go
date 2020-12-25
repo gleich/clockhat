@@ -31,7 +31,7 @@ func main() {
 				continue
 			}
 
-			rgbVal := int(4.25 * now.Second())
+			rgbVal := int(4.25 * float(now.Second()))
 			fb.SetPixel(rgbVal, rgbVal, rgbVal)
 
 			x++
