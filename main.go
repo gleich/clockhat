@@ -27,20 +27,22 @@ func main() {
 			}
 
 			if i <= now.Minute() {
-				fb.SetPixel(x, y, color.New(255, 255, 255))
+				fb.SetPixel(x, y, color.New(241, 224, 0))
+				x++
 				continue
 			}
 
 			rgbVal := uint8(4.25 * float32(now.Second()))
-			fb.SetPixel(x, y, color.New(rgbVal, rgbVal, rgbVal))
-
-			x++
+			fb.SetPixel(x, y, color.New(rgbVal, rgbVal, 0))
+			break
 		}
 
 		err := screen.Draw(fb)
 		if err != nil {
 			logoru.Error("Failed to update lights;", err)
 		}
+
+		logoru.Success("Updated lights!")
 
 		time.Sleep(time.Millisecond * 20)
 	}
