@@ -17,7 +17,7 @@ func main() {
 			now = time.Now()
 		)
 
-		for i := 2; i <= 60; i++ {
+		for i := 0; i <= 60; i++ {
 			if x == 8 {
 				y++
 				x = 0
@@ -27,7 +27,7 @@ func main() {
 			}
 
 			if i <= now.Minute() {
-				fb.SetPixel(x, y, color.New(241, 224, 0))
+				fb.SetPixel(x, y, color.New(255, 140, 0))
 				x++
 				continue
 			}
