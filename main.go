@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 	"github.com/nathany/bobblehat/sense/screen"
 	"github.com/nathany/bobblehat/sense/screen/color"
 )
